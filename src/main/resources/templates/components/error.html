@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Error</title>
+</head>
+<body>
+  <div class="container">
+    <h1 th:if="${errorMessage}" th:utext="${errorMessage}">Error java.lang.NullPointerException</h1>
+    <h1 th:unless="${errorMessage}">404 - Page does not exist</h1>
+    <a th:href="@{shopping/shop.html}">Go to Home Page</a>
+  </div>
+</body>
+</html>
